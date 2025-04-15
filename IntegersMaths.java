@@ -11,20 +11,21 @@ public class IntegersMaths{
 
 	int sum = number1 + number2;
 	int product = number1 * number2;
-	int average = sum / 2;
-	double myDouble = (double)average;
+	int average = (number1 + number2) / 2;
 	int distance = number1 - number2;
 
 	System.out.printf("Sum of two numbers: " + "%d\n", sum);
 	System.out.printf("Product of two numbers: " + "%d\n", product);
-	System.out.printf("Average of two numbers: " + "%d\n", myDouble);
+	System.out.printf("Average of two numbers: " + "%d\n", average);
 	System.out.printf("Distance of two numbers: " + "%d\n", distance);
 
 	if (number1 > number2) {
 	System.out.printf("Max number: " + "%d\n", number1);
 	System.out.printf("Min number: " + "%d\n", number2);
 
-}	else System.out.printf("Max number: " + "%d\n", number2);
+}	else if (number1 < number2) {
+	System.out.printf("Max number: " + "%d\n", number2);
 	System.out.printf("Min number: " + "%d\n", number1);
+	}
 }
 }
