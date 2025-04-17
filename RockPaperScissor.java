@@ -17,13 +17,13 @@ public class RockPaperScissor {
 	int paper = 2;
 
 	int randomPick = rand.nextInt(3);
-	System.out.println("Computer pick: " + randomPick);
 
 	if (number == randomPick) {
 	System.out.println("IT'S A TIE!!");
 }
 	if (number == scissor && randomPick == rock) {
 	System.out.println("YOU LOOSE!! Play again!");
+	System.out.println("Computer pick: " + randomPick);
 }	
 	if (number == scissor && randomPick == paper) {
 	System.out.println("Hurray!! YOU WIN!!");

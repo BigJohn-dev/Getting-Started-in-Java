@@ -16,10 +16,13 @@ public class HeadAndTail {
 	int Tail = 1;
 
 	int randomPick = rand.nextInt(2);
-	System.out.println("Computer pick: " + randomPick);
 
-	if (anyNum == randomPick) {
+	if (anyNum > 2) {
+	System.out.println("Invalid input!!");
+
+}	else if (anyNum == randomPick) {
 	System.out.println("YOU WIN!!");
+	System.out.println("Computer pick: " + randomPick);
 
 }	else System.out.println("YOU LOOSE!!");
 	
